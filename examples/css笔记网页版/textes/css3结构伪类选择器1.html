@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3结构伪类选择器</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* 三个子代结构选择器的使用 */
+      /* 选择第一个孩子 */
+      .box1 ul li:first-child {
+        color: blue;
+      }
+      /* 选择最后一个孩子 */
+      .box1 ul li:last-child {
+        color: pink;
+      }
+      /* 3.选择第二个孩子 */
+      /* :nth-child(n)选择第n个孩子 */
+      ul li:nth-child(2) {
+        color: red;
+      }
+      ul li:nth-child(4) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <p>clild系列</p>
+      <ul>
+        <li>第一个孩子</li>
+        <li>第二个孩子</li>
+        <li>第三个孩子</li>
+        <li>第四个孩子</li>
+        <li>第五个孩子(最后一个)</li>
+      </ul>
+    </div>
+  </body>
+</html>

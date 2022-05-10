@@ -1,0 +1,270 @@
+/* 总体样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+  /* border: 1px solid black; */
+}
+.clearfix:after {
+  content: "";
+  /* 内容设置为空 */
+  display: block;
+  /* 更改为块级元素 */
+  height: 0;
+  clear: both;
+  /* 设置清除 */
+  visibility: hidden;
+  /* 高级隐藏盒子 */
+}
+.clearfix {
+  /* IE6~7专有 */
+  *zoom: 1;
+}
+
+body {
+  /* 背景渐变 */
+  background: linear-gradient(60deg, #fbda6a, #ff5acd);
+  background: opacity(0.5);
+  overflow-x: hidden;
+}
+.w {
+  width: 1190px;
+  margin: 0 auto;
+}
+.con {
+  height: 300px;
+  width: 1100px;
+  padding: 10px 30px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-left: 178px;
+}
+
+/* flex布局部分 */
+/* 阴影 */
+.yinying {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+.flex {
+  display: flex;
+}
+.baise {
+  background-color: rgba(255, 255, 255, 0.563);
+}
+.flex1 {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+/* 边距 */
+.mg8 {
+  margin: 8px;
+}
+/* 右边距 */
+.mgr8 {
+  margin-right: 8px;
+}
+/* 上边距 */
+.mgt8 {
+  margin-top: 8px;
+}
+
+/* 盒子样式 */
+/* 页头 */
+.header {
+  height: 250px;
+  border-radius: 0px 0px 30px 30px;
+  margin-bottom: 20px;
+  /* background-color: rgba(255, 255, 255, 0.518); */
+  /* background-image: url(../img/bg1.png); */
+  /* padding:0px 200px; */
+}
+/* 放头像的 */
+.hd-img {
+  height: 200px;
+  width: 200px;
+  /* background-color: pink; */
+  margin: 20px 0px 0px 60px;
+  border-radius: 100px;
+  overflow: hidden;
+  /* transition: 0.3s; */
+}
+/* 图片格式 */
+.hd-img img {
+  height: 100%;
+  width: 100%;
+  /* 底线对齐 */
+  vertical-align: bottom;
+  /* 透明度 */
+  opacity: 0.6;
+  transition: 0.7s;
+}
+/* 移入时显示 */
+.hd-img img:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.hd-content {
+  height: 250px;
+  width: 600px;
+  margin-left: 20px;
+  /* background-color: skyblue; */
+  flex: 1;
+  padding: 30px 0px;
+}
+.hd-content p {
+  text-align: center;
+  font-size: 25px;
+  font-family: kaiti;
+  font-weight: bold;
+  line-height: 50px;
+}
+/* 搜索栏 */
+.search {
+  height: 60px;
+  width: 600px;
+  margin: 5px auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.search input {
+  height: 60px;
+  width: 500px;
+  outline: none;
+  padding: 0px 20px;
+  margin-top: -2px;
+  margin-left: -5px;
+  font-size: 18px;
+  color: blue;
+  background-color: rgba(238, 238, 238, 0.484);
+  float: left;
+}
+.search .sea {
+  height: 60px;
+  width: 60px;
+  /* background-color: pink; */
+  float: left;
+}
+.search .sea button {
+  height: 70px;
+  width: 60px;
+  /* background-color: skyblue; */
+  margin-top: -5px;
+  /* margin-right:-10px; */
+  outline: none;
+  font-size: 17px;
+  font-family: youyuan;
+  color: black;
+  /* background-color: transparent; */
+}
+
+/* 内容 */
+.container {
+  /* height: 1000px; */
+}
+.main {
+  /* height: 920px; */
+}
+/* 顶部导航栏 */
+.top-nav {
+  height: 70px;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.901);
+}
+/* 顶部导航栏内容 */
+.top-nav-ct {
+  display: inline-block;
+}
+.top-nav-ct ul {
+  list-style: none;
+}
+.top-nav-ct ul li {
+  float: left;
+}
+.top-nav-ct ul li a {
+  display: inline-block;
+  height: 70px;
+  width: 120px;
+  /* background-color: skyblue; */
+  line-height: 70px;
+  text-decoration: none;
+  /* margin-left: 20px; */
+  font-size: 22px;
+  color: black;
+  transition: 0.5s;
+}
+.top-nav-ct ul li a:hover {
+  color: blue;
+  /* font-size: 24px; */
+}
+/* 盒子内容 */
+.left-contan {
+  height: 200px;
+  width: 300px;
+  float: left;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  margin-top: 40px;
+  margin-left: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+.left-contan img {
+  height: 200px;
+  width: 300px;
+
+  opacity: 0.5;
+
+  transition: 0.5s;
+}
+.left-contan img:hover {
+  height: 220px;
+  width: 320px;
+  opacity: 1;
+}
+.right-contan {
+  height: 200px;
+  width: 350px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 150px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: 宋体;
+}
+.right-contan a{
+    margin-left:10px;
+}
+.right-contan ul {
+  list-style: none;
+}
+/* 页脚 */
+.footer {
+  height: 80px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+/* 媒体适配 */
+@media (max-width: 800px) {
+  .right-contan {
+    display: none;
+  }
+  .hd-img {
+    display: none;
+  }
+  .type p{
+    font-size: 20px;
+  }
+  .con{
+      width: 340px;
+  }
+}

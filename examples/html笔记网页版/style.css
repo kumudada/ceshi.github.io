@@ -1,0 +1,101 @@
+/* 整体样式设置 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+body hr {
+  /* size:"5px" width:60px ;align:"center" color="orange" */
+  size: 5px;
+  width: 250%;
+  align: center;
+  color: orange;
+}
+/* 网页头部 */
+#header {
+  height: 100px;
+  width: 1902px;
+  background-color: #1f599c;
+  background-image: url(img/logo（1）.png);
+  background-repeat: no-repeat;
+  background-position: 35px -70px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+#nav {
+  height: 26px;
+  border: 1px solid pink;
+  overflow:hidden;
+}
+
+#nav a {
+  color: royalblue;
+  text-decoration: none;
+}
+/*导航栏背景，高26px 颜色：蓝色*/
+/*分别设置边框，高度，背景颜色*/
+/* #menu {
+  height: 42px;
+  width: auto;
+  color: red;
+} */
+#nav li {
+  border: 1px solid #ccc;
+  height: 26px;
+  background: rgba(0, 0, 255, 0.1);
+}
+/* #menu li:hover {
+  background-color: pink;
+} */
+/*删除表格圆点和文字缩进*/
+#nav ul {
+  list-style: none;
+  margin: 0px;
+}
+/*因为列表是垂直显示，所以使用左对齐属性让它成为水平排列*/
+#nav ul li {
+  float: left;
+  padding: 0px 40px;
+  line-height: 26px;
+
+}
+
+#link_ol1 ol {
+  color: navajowhite;
+}
+
+#nav li:hover {
+  background-color: pink;
+}
+
+body {
+  background-image: url(img/htmlbg1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 2px solid blue;
+  background: rgba(0, 0, 255, 0.1);
+  /* padding:10px; */
+}
+#main-text {
+  /* margin:10px; */
+  padding: 40px;
+}
+/* 底部版权 */
+#footer {
+  border-width: 0px;
+  margin-top: 0px;
+  height: 60px;
+  width: auto;
+  background-color: #1f599c;
+}

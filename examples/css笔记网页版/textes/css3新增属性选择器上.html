@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3新增属性选择器</title>
+    <style>
+      /* 1.利用属性选择器就可以不用借助于类或者id选择器 */
+      /* 选择必须是input同时有value属性 */
+      #box1 input[value] {
+        color: pink;
+        outline: 0;
+      }
+
+      /* 2.属性选择器还可以选择 属性=值 的某些元素  */
+      /* 只选择type等于text的input元素 */
+      #box2 input[type="text"] {
+        color: blue;
+        outline: none;
+      }
+      /* <!-- 3.属性选择器可以选择属性值开头的某些元素 --> */
+      /* 选择class以ico开头的div盒子 */
+      #box3 div[class^="ico"] {
+        background-color: pink;
+      }
+      #box3 div {
+        height: 20px;
+        width: 200px;
+        border: 1px solid red;
+      }
+      /* <!-- 4.属性选择器可以选择属性值结尾的某些元素 --> */
+      #box4 section[class$="data"] {
+        color: pink;
+      }
+      /* <!-- 5.选择属性值中所包含的相应字符的元素 --> */
+      #box5 div[class*="ta"] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.利用属性选择器就可以不用借助于类或者id选择器 -->
+    <div id="box1">
+      <p>1.利用属性选择器就可以不用借助于类或者id选择器</p>
+      <input type="text" value="请输入用户名" />
+      <input type="text" />
+    </div>
+    <!-- 重点 -->
+    <!-- 2.属性选择器还可以选择 属性=值 的某些元素 -->
+    <div id="box2">
+      <p>2.属性选择器还可以选择 属性=值 的某些元素</p>
+      <input type="text" />
+      <input type="password" />
+    </div>
+    <!-- 3.属性选择器可以选择属性值开头的某些元素 -->
+    <div id="box3">
+      <p>3.属性选择器可以选择属性值开头的某些元素</p>
+      <div class="icon1">图标1</div>
+      <div class="icon2">图标2</div>
+      <div class="icon3">图标3</div>
+    </div>
+    <!-- 4.属性选择器可以选择属性值结尾的某些元素 -->
+    <div id="box4">
+      <p>4.属性选择器可以选择属性值结尾的某些元素</p>
+      <section class="icon1-data">我是安其拉</section>
+      <section class="icon2-data">我是哥斯拉</section>
+      <section class="icon3-ico">那我是谁</section>
+    </div>
+    <!-- 5.选择属性值中所包含的相应字符的元素 -->
+    <div id="box5">
+      <p>5.选择属性值中所包含的相应字符的元素</p>
+      <div class="box_ta">盒子1</div>
+      <div class="box_ah">盒子2</div>
+      <div class="box_ta">盒子3</div>
+      <div class="box_yu">盒子4</div>
+    </div>
+  </body>
+</html>

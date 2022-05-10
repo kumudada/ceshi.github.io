@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html笔记</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- 页头 -->
+    <div id="header" >
+      <p></p>
+    </div>
+    
+    <div id="nav" >
+      <!--导航栏雏形-->
+      <!-- <font color="#f5fffa"> -->
+        <ul>
+          <li><a href="#picture">插入图片</a></li>
+          <li><a href="#list">列表</a></li>
+          <li><a href="#audio">插入音频</a></li>
+          <li><a href="#chaolianjie">超链接</a></li>
+          <li><a href="#excil">表格</a></li>
+          <li><a href="#Text format">文本格式化</a></li>
+          <li><a href="#video">插入视频</a></li>
+          <li><a href="#form_index">表单</a></li>
+
+          <!--联系作者-->
+          <li>
+            <a
+              href="https://space.bilibili.com/472172487?spm_id_from=333.1007.0.0"
+              target="_blank"
+              >联系作者</a
+            >
+          </li>
+        </ul>
+      <!-- </font> -->
+    </div>
+    <div id="main">
+      <div id="main-text">
+      <!--文本格式化-->
+      <div id="Text format">
+        <hr size="1px">
+        <h2>[文本格式化]</h2>
+        <p>在以后，所有字体的样式，颜色等格式均由css完成，不需要以下属性。</p>
+        <p>简介：添加文字后，可以利用font标签及其属性对网页文字的字体，字号，颜色
+          进行设计。</p>
+        <p>
+          语法：《font face=” ” size=” ” color=” ” 》...《/font>》
+        </p>
+        
+        </div>
+        
+        
+        
+        <hr>
+        <!--知识点：插入图片-->
+        <div id="picture" align="left">
+          <h2>[图片]</h2>
+          <em><P>&nbsp;&nbsp;&nbsp;&nbsp;使用img单标签可以在网页中插入图片，还可以设置显示图片的长宽比</P></em>
+          <b><p>属性一览</p></b>
+          <ul>
+              <li>src:图片的地址，尽量用相对路径，<font color="red">此标签必须有！</font></li>
+              <li>alt：替换文本，当图片显示不出来的时候显示的文字，<font color="red">此标签必须有！</font></li>
+              <li>title：提示文本，鼠标悬停在图片上面时显示的文字</li>
+              <li>width and heigth：图片的宽度和高度(数字)</li>
+              <ol type="i">
+                  <li>如果之设置其中一个值，系统会自动调整比例</li>
+                  <li>如果两个值都自行设置，要注意图片会不会变形</li>
+              </ol>
+              <li>border: 设置边框，数值为数字</li>
+          </ul>
+          <img src="img/cat1.gif" alt = "妖娆小猫咪" title = "你在看！" width = "150">
+        </div>
+        
+        <hr>
+        <!--知识点：列表-->
+        <div id="list">
+          <h2>[列表↓↓]</h2>
+          <p><em>&nbsp;&nbsp;&nbsp;&nbsp;列表是非常重要的知识点，分有序和无序and定义列表<br>
+              通常用有序和无序，无序最重要(有序和无序可以嵌套使用)</em></p>
+          <b><p>有序列表</p></b>
+          <ol>
+              <p></p>
+              <li>type属性，设置序号样式</li>
+              <li>1 -->列表序号为1,2,3(默认)</li>
+              <li>a -->序号为小写英文字母</li>
+              <li>A -->大写同上</li>
+              <li>i -->小写罗马数字</li>
+              <li>I -->大写罗马数字</li>
+          </ol>
+          <b><p>无序列表</p></b>
+          <ul>
+              <li>type属性，设置序号样式</li>
+              <li>disc ->默认，实心圆</li>
+              <li>circle ->空心圆</li>
+              <li>square ->实心正方形</li>
+          </ul>
+          <b><p>定义列表</p></b>
+          <dl>
+              <dt>要解释的名词</dt>
+              <dd>名词的具体解释</dd>
+              <dd>名词的具体解释 2</dd>
+              <dt>要解释的名词2</dt>
+          </dl>
+        </div>
+        
+        <hr>
+        
+        <div id = "audio">
+        
+        <!--知识点：插入音频-->
+        
+          <!-- 注意：在 chrome 浏览器中已经禁用了 autoplay 属性 -->
+          <!--
+          因为不同浏览器支持不同的格式，所以我们采取的方案是这个音频准备多个文件
+         -->
+        
+          <h2>[多媒体标签--音频]</h2>
+          <p><img src="img/yinpinbiaoqiangeshi.png" alt = "音频格式" width="600"></p>
+        
+          <img src="img/audiodeshuxing.png" alt ="属性" width="600">
+          <br>
+          <audio src = "./music/huahuo.mp3" controls></audio>
+        </div>
+        
+        <div id="video">
+          <hr>
+        <!--视频标签-->
+          <h3>多媒体标签--视频</h3>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;属性和audio相同，谷歌浏览器不支持自动播放音视频，但是视频可以加 muted 属性静音自动播放<br>
+          必须要有src 和 controls属性。
+        </p>
+        
+          <video src="video/老番茄福尔摩斯.mp4" controls height="300" autoplay loop muted></video>
+        
+        
+        </div>
+        
+        <div id="chaolianjie">
+          <hr>
+          <h2>[超链接（重要）]</h2>
+          <em><p>超链接可以是一个字，一个词，或者一组词，也可以是一幅图像，您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。
+        <br>
+              当您把鼠标指针移动到网页中的某个链接上时，箭头会变为一只小手。
+        <br>
+              在a标签中使用了href属性来描述链接的地址。</p></em>
+        
+          <b><p>属性</p></b>
+          <ul>
+              <li>href->链接地址，可以是一个锚点也可以是网址或者html文件，必须要有的属性;<br>
+                  如果要链接一个图片使用img标签即可</li>
+              <li>target->设置链接的打开方式</li>
+              <div id="link_ol1">
+                  <ol type="a">
+                      <li>_self:默认方式，即在当前窗口打开链接</li>
+                      <li>_blank:在一个全新的空白窗口中打开链接</li>
+                      <li>_top:在顶层框架中打开链接</li>
+                      <li>_parent:在当前框架的上一层里打开链接</li>
+                      <li><em>我们只需要掌握“_self”和“_blank”这两个属性值就可以了，其他两个用不到。</em></li>
+                  </ol>
+              </div>
+        
+              <li>id->设置书签，可以用锚点书签来链接</li>
+          </ul>
+        <!--<a href="url">链接文本</a>
+        链接文本不一定是文本，也可以是图片，一个图片只能链接一个地址
+        -->
+        <a href="#" target="_blank">空链接</a>
+        <!--锚点链接-->
+          <b><p>锚点链接</p></b>
+        《a href = "#书签名称" 》链接文字《/a》
+         <p>可以跳转到连接的书签，包涵id的div,a标签中</p>
+        </div>
+        
+        <div id="excil" align="center">
+          <hr>
+        <!--表格-->
+        
+        <!--由大到小 table(表格整体) > tr(表格行) > td(表格单元格)-->
+          <h2>[表格]</h2>
+        <!--开头演示-->
+        <!--border 边框宽度，默认为0 bgcolor 表格颜色-->
+        <table border="1" bgcolor="red">
+          <tr>
+              <td>单元格1</td>
+              <td>单元格2</td>
+          </tr>
+        </table>
+        <!--表格的属性-->
+        <strong><p>相关属性</p></strong>
+          <ul>
+              <li>border-->单元格边框宽度</li>
+              <li>width-->表格宽度</li>
+              <li>height-->表格高度</li>
+              <li>bgcolor-->设置表格颜色，可以用英文颜色或者16进制</li>
+              <li>cellspacing-->设置边框内间隔的大小</li>
+              <li>cellspadding-->设置表格内容的内边距(可以使用css里的padding标签快捷设置)</li>
+              <li>属性值除bgcolor均为数字</li>
+
+              <li><font color="red">关于表格样式效果等设置最好使用css设置</font></li>
+          </ul>
+        <!--标签语义化部分-->
+          <table border="1" bgcolor="white">
+              <caption>标签语义化</caption>
+              <thead>
+              <tr>
+                  <td>标签</td>
+                  <td>语义</td>
+                  <td>说明</td>
+              </tr>
+              </thead>
+              <tbody>
+        
+              <tr>
+                  <td>table</td>
+                  <td>table（表格）</td>
+                  <td>表格</td>
+              </tr>
+        
+              <tr>
+                  <td>tr</td>
+                  <td>table row（表格行）</td>
+                  <td>行</td>
+              </tr>
+              <tr>
+                  <td>td</td>
+                  <td>table data cell（表格单元格）</td>
+                  <td>单元格</td>
+              </tr>
+              <tr>
+                  <td>thead</td>
+                  <td>table head</td>
+                  <td>表头</td>
+              </tr>
+              <tr>
+                  <td>tbody</td>
+                  <td>table body</td>
+                  <td>表身</td>
+              </tr>
+              <tr>
+                  <td>tfoot</td>
+                  <td>table foot</td>
+                  <td>表脚</td>
+              </tr>
+              <tr>
+                  <td>th</td>
+                  <td>table header</td>
+                  <td>表头单元格</td>
+              </tr>
+              </tbody>
+          </table>
+        
+        
+        <!--表格实例-->
+          <em><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              应用</p></em>
+          <table>
+              <caption>表格标题</caption>
+              <!--表头-->
+              <thead>
+              <tr>
+                  <th>表头单元格1</th>
+                  <th>表头单元格2</th>
+              </tr>
+              </thead>
+              <!--表身-->
+              <tbody>
+              <tr>
+                  <td>标准单元格1</td>
+                  <td>标准单元格2</td>
+              </tr>
+              <tr>
+                  <td>标准单元格1</td>
+                  <td>标准单元格2</td>
+              </tr>
+              </tbody>
+              <!--表脚-->
+              <tfoot>
+              <tr>
+                  <td>表脚单元格1</td>
+                  <td>表脚单元格2</td>
+              </tr>
+              </tfoot>
+          </table>
+        
+          <!--合并行-->
+          <h3>合并单元格</h3>
+          <p>合并行 rowspan标签 数值为合并的行数</p>
+          <p>合并列 colspan标签 数值为合并的列数</p>
+          <p><font color="orange">左上原则：行合并后保留最上边的内容 列合并后保留最左边的内容</font></p>
+        
+          <!--行合并实例-->
+          <table border="1" cellspadding="1">
+              <!--第1行-->
+              <tr>
+                  <td>姓名:</td>
+                  <td>小明</td>
+              </tr>
+              <!--第2行-->
+              <tr>
+                  <td rowspan="2">喜欢水果:</td>
+                  <td>苹果</td>
+              </tr>
+              <!--第3行-->
+              <tr>
+                  <td>香蕉</td>
+              </tr>
+          </table>
+          <!--列合并实例-->
+          <table border="1">
+              <!--第1行-->
+              <tr>
+                  <td colspan="2">绿叶学习网精品教程</td>
+              </tr>
+              <!--第2行-->
+              <tr>
+                  <td>HTML教程</td>
+                  <td>CSS教程</td>
+              </tr>
+              <!--第3行-->
+              <tr>
+                  <td>jQuery教程</td>
+                  <td>SEO教程</td>
+              </tr>
+          </table>
+        
+          <em><p>注意：只能合并同一块级元素内的列和行</p></em>
+        </div>
+        <hr>
+        
+        <!--表单导航-->
+        <div id="form_index">
+        <!--    input表单-->
+          <h2>[input表单]</h2>
+          <em><p>表单可以由form标签打包分组(块级元素)</p></em>
+          <h3>表单的应用</h3>
+        <ul type="src">
+          <li>注册</li>
+          <li>登录</li>
+          <li>搜索</li>
+          <li>所以使用频率不高</li>
+        </ul>
+          <h3>表单标签</h3>
+        <ol type="1">
+          <li><a href="#form_input">input</a></li>
+          <li><a href="#form_select">textarea</a></li>
+          <li><a href="#form_select">select和option</a></li>
+        </ol>
+        </div>
+        <!--input标签锚点-->
+        <div id="forms">
+          <div id="form_input">
+              <strong><p>&nbsp;&nbsp;&nbsp;&nbsp;input标签表单分类</p></strong>
+              <em><p>html5中又新添加了几个新标签，我们之后再说。</p></em>
+              <!--所有input属性一览-->
+              <ul>
+                  <li>text属性 输入文本框</li>
+                  <li>password属性 输入密码框</li>
+                  <li>radio属性 单选框</li>
+                  <li>checkbox属性 多选框</li>
+                  <li>file属性 上传文件到云</li>
+                  <ol>
+                      <li>需要配合form使用的三个按钮</li>
+                      <li>submit 提交按钮</li>
+                      <li>reset 重置按钮</li>
+                      <li>button 普通按钮，链接js使用</li>
+                  </ol>
+              </ul>
+              <hr align="left" width="250 %" color="orange">
+              <!--属性值1：text 输入文本框  placeholder 提示文本属性-->
+              <h4>text属性</h4>
+              （文本框）昵称：<input type="text" placeholder="这是一个文本框">
+              <br><br>
+              <h4>password属性</h4>
+              <!--属性值2： password 密码输入框-->
+              （密码输入框）密码：<input type="password" placeholder="请输入密码">
+              <br><br>
+              <h4>radio属性</h4>
+              <!--属性3：radio 单选框，多选一-->
+              <br>
+              （单选框）性别：<input type="radio" name="sex" value="男">男
+              <input type="radio" name="sex" value="女">女
+              <br>
+              <h4>checkbox属性</h4>
+              <!--属性4：checkbox 多选框-->
+              （多选框）请选择你的属性：
+              爱好&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">敲代码
+              <input type="checkbox">熬夜
+              <input type="checkbox">秃头
+              <br>
+              <br>
+              <h4>file属性</h4>
+              <!--属性5：file 上传文件 可以用后台接收文件 multiple ->可以上传多个文件 -->
+              （上传文件） <input type="file" multiple>
+              <br>
+              <br>
+          </div>
+        
+          <!--三种按钮标签-->
+          <div id="form_buttons">
+              <h3>三个按钮标签</h3>
+              需要配合form使用的三个按钮
+        
+              <form>
+                  <h4>submit按钮</h4>
+                  <p>可以将数据提交给服务器后端</p>
+                  <input type="submit" valut="确认" placeholder="确认">
+                  <!--图片提交按钮-->
+                  <h3>图片提交按钮</h3>
+                  <p>可以用一张图片做为提交按钮</p>
+                  <form name="image_form">
+                      <input type="text">
+                      <br>
+                      <br>
+                      <input type="image" src="img/提交.jpeg" name="image">
+                  </form>
+        
+                  <h4>reset按钮，可以重置整个form的数据</h4>
+                  <input type="reset"  value="重新输入">
+                  <h4>button按钮</h4>
+                  <!--onclick="" 链接到相应的js文件-->
+                  button 普通按钮，配合js代码使用  value 按钮显示的文字
+                  <input type="button" value="点我试试">
+              </form>
+              </form>
+          </div>
+        
+          <div id="form_textarea">
+              <h3>多行文本框(textarea)</h3>
+              <ul>
+                  <li>cols 文本框的长度</li>
+                  <li>rows 宽度</li>
+                  <li>长度是宽度的两倍，通常用css设置样式，所以了解即可。</li>
+              </ul>
+              <textarea cols="45">
+        
+          </textarea>
+          </div>
+        
+          <div id="form_select">
+              <h3>select和option下拉菜单</h3>
+              <p>select整体结构，option单个选项 selected设置默认选项</p>
+              <select>
+                  <option selected>你好</option>
+                  <option>hello</option>
+              </select>
+              <br>
+              源码：<br>
+              <textarea cols="35" rows="5">
+        <select>
+          <option selected>你好</option>
+          <option>hello</option>
+        </select>
+          </textarea>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <h2>[html5新增标签]</h2>
+        <p>(1)新增的语义化标签</p>
+        <ul>
+          <li>header --头部标签</li>
+          <li>nav --导航标签</li>
+          <li>article --内容标签</li>
+          <li>section --块级标签</li>
+          <li>aside --侧边栏标签</li>
+          <li>footer --尾部标签</li>
+        </ul>
+        <p>新标签可以使用一次或者多次</p>
+        <p>语义化标签，在移动端支持比较友好，</p>
+        <br>
+        <h3>新增的input标签</h3>
+        <img src="img/html5新增的input标签.png" alt="">
+        <br>
+        <span>
+          输入为email类型
+          <!--输入为email类型-->
+          <input type="email" id="newinput_email"><br>
+        </span>
+        <span>
+          输入必须为url类型
+          <input type="url">
+        </span>
+        <!--输入必须为url类型-->
+        
+        <p>search表单，搜索框</p>
+        <input type="search"><br>
+        <p>color表单，颜色选择框</p>
+        <input type="color">
+        <p>week周标签</p>
+        <br>
+        <input type="week" name="input_week"><br><br>
+        <p>month月标签</p>
+        <input type="month" name="input_month">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>等新增表单不做演示,表单搭配form和提交按钮使用。</strong></p>
+        <h3>新增的表单属性</h3>
+        <table border="1" bgcolor="#a9a9a9">
+          <thead>
+          <tr >
+              <td>属性</td>
+              <td>值</td>
+              <td>说明</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>required</td>
+              <td>required</td>
+              <td>表单拥有该属性表示其内容不能为空，必填项</td>
+          </tr>
+          <tr>
+              <td><font color="red">placeholder</font></td>
+              <td>提示文本（占位符）</td>
+              <td>表单的提示信息，存在默认值将不显示</td>
+          </tr>
+          <tr>
+              <td>autofocus</td>
+              <td>无</td>
+              <td>自动聚焦属性，页面加载完成后自动聚焦到指定表单</td>
+          </tr>
+          <tr>
+              <td>autocomplete</td>
+              <td>off/on</td>
+              <td>
+                  <p>当用户在字段开始输入时，浏览器基于之前的输入历史，应该显示出在字段中填写的选项</p>
+                  <p>默认打开，关闭改成off</p>
+                  <p>需要放在表单内同时加上name属性</p>
+              </td>
+          </tr>
+          <tr>
+              <td><font color="red">multiple</font></td>
+              <td>无</td>
+              <td>可以多选文件提交</td>
+          </tr>
+          </tbody>
+        </table>
+        <hr>
+        <h3>盒子标签（div和span）</h3>
+        <p><strong>div和span没有语义，就是个盒子，将里面的内容打包到一个盒子中<br>
+                  可以使用css单独设置一个盒子中的内容</strong></p>
+        <p><strong>div自带换行，每个div不能存在同一行，一个大盒子，单独占一行[块级标签]</strong></p>
+        <p><strong>span不换行，不同的span可以在一行[行级标签]</strong></p>
+        <!--演示-->
+        <!--div1-->
+        <div>
+          div内容1
+        </div>
+        <!--div2-->
+        <div>
+          div内容2
+        </div>
+        <p>可见，div不可以在同一行</p>
+        
+            </div>
+      </div>
+
+    <div id="footer">
+<p> </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3结构伪类选择器3</title>
+    <style>
+      /* 会把所有元素的盒子排列序号 */
+      /* 执行时先看 :nth-child(1) 之后再回看 前面的div */
+      /* 选择不出来 */
+      /* 先找元素 */
+      section div:nth-child(1) {
+        background-color: pink;
+      }
+      /* 会把指定元素的盒子排列序号 */
+      /* 执行时先看 div指定的元素 之后再回看 :nth-of-type(1) 前几个孩子*/
+      /* 先找孩子 */
+      section div:nth-of-type(1) {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 区别 -->
+    <section>
+      <p>光头强</p>
+      <div>熊大</div>
+      <div>熊二</div>
+    </section>
+  </body>
+</html>
